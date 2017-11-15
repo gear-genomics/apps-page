@@ -1,0 +1,43 @@
+[
+  {
+    "name": "alfred",
+    "url": "/alfred",
+    "description": "BAM file statistics."
+  },
+  {
+    "name": "bgen",
+    "url": "/bgen",
+    "description": "Heuristic barcode generator."
+  },
+  {
+    "name": "Indigo",
+    "url": "/indigo",
+    "description": "Rapid InDel Discovery in Sanger Chromatograms."
+  },
+  {
+    "name": "maze",
+    "url": "/maze",
+    "description": "Visually align sequences using exact matches."
+  },
+  {
+    "name": "Primer3Plus",
+    "url": "/primer3plus",
+    "description": "Pick primers from a DNA sequence.",
+    "abbreviation": "P3P"
+  },
+  {
+    "name": "Wily-DNA-Editor",
+    "url": "/wily-dna-editor",
+    "description": "Edit DNA sequences, reverse-complement and do restriction digests."
+  },
+  {
+    "name": "Silica",
+    "url": "/silica",
+    "description": "In-silico PCR amplification on complete genomes."
+  },
+  {
+    "name": "Teal",
+    "url": "/teal",
+    "description": "Trace analysis viewer."
+  }
+]

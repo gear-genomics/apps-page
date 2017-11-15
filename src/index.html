@@ -5,7 +5,7 @@
   <title>GEAR – genome analysis server</title>
   <meta name="description" content="Genome bioinformatics web applications hosted at the EMBL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ css_file }}">
 </head>
 <body>
   <header>
@@ -13,32 +13,21 @@
     <div style="font-size: 1.6rem; font-family: 'Unica One'">GENOME ANALYSIS SERVER</div>
   </header>
   <div class="container">
-    <a href="http://gear.embl.de/bgen" target="_blank" class="card">
+    {% for app in apps %}
+    <a href="{{ app.url }}" target="_blank" class="card">
       <span class="card__left">
-        <span class="app-logo">BG</span>
+        <span class="app-logo">{{ app.abbreviation }}</span>
       </span>
       <span class="card__right">
         <span class="app-description">
-          <span class="app-description__header">bgen</span>
+          <span class="app-description__header">{{ app.name }}</span>
           <span class="app-description__text">
-            Heuristic barcode gen&shy;er&shy;ator.
+            {{ app.description }}
           </span>
         </span>
       </span>
     </a>
-    <a href="http://gear.embl.de/indigo" target="_blank" class="card">
-      <span class="card__left">
-        <span class="app-logo">IN</span>
-      </span>
-      <span class="card__right">
-        <span class="app-description">
-          <span class="app-description__header">Indigo</span>
-          <span class="app-description__text">
-            Rapid InDel Discovery in Sanger Chromatograms.
-          </span>
-        </span>
-      </span>
-    </a>
+    {% endfor %}
     <div class="teaser">...stay tuned for more...</div>
   </div>
   <footer>
