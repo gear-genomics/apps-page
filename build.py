@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 import os
+import pathlib
 import shutil
 import json
 import hashlib
@@ -12,16 +13,24 @@ dist_dir = 'dist'
 shutil.rmtree(dist_dir, True)
 os.mkdir(dist_dir)
 
-shutil.copytree(os.path.join(src_dir, 'img'), os.path.join(dist_dir, 'img'))
+shutil.copytree(os.path.join(src_dir, 'assets'), os.path.join(dist_dir, 'assets'))
 
-css_path_src = os.path.join(src_dir, 'style.css')
+def hashed_filename(path):
+    with open(path, 'rb') as f:
+        f_content = f.read()
+    hashed = hashlib.sha1(f_content).hexdigest()
+    basename = os.path.basename(path)
+    prefix, ext = os.path.splitext(basename)
+    return '{}.{}{}'.format(prefix, hashed[:8], ext)
 
-with open(css_path_src) as f:
-    css = f.read()
-    css_hashed = hashlib.sha1(css.encode()).hexdigest()
-    css_file_dist = 'style.{}.css'.format(css_hashed[:8])
-    css_path_dist = os.path.join(dist_dir, css_file_dist)
-    shutil.copy(css_path_src, css_path_dist)
+files = {}
+for root, dirs, fnames in os.walk(os.path.join('dist', 'assets')):
+    for fname in fnames:
+        path = os.path.join(root, fname)
+        fname_hashed = hashed_filename(path)
+        os.rename(path, os.path.join(root, fname_hashed))
+        path_dist = os.path.join(*pathlib.Path(path).parts[1:-1], fname_hashed)
+        files[fname] = path_dist
 
 with open('apps.json') as f:
     apps = json.load(f)
@@ -33,4 +42,4 @@ with open(os.path.join(src_dir, 'index.html')) as f:
     html = f.read()
     template = jinja2.Template(html)
     with open(os.path.join(dist_dir, 'index.html'), 'w') as f_out:
-        f_out.write(template.render(apps=apps, css_file=css_file_dist))
+        f_out.write(template.render(apps=apps, files=files))
