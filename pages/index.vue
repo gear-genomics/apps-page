@@ -37,6 +37,14 @@ const crypto = require('crypto')
 import { relativeLuminance } from '~/utils'
 
 export default {
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Muli:300,400|Unica+One|Dancing+Script'
+      }
+    ]
+  },
   data () {
     return {
       apps: require('~/apps.json').sort((app1, app2) => 
@@ -65,8 +73,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Unica+One|Dancing+Script');
-
 .page {
   font-family: 'Muli', sans-serif;
   color: #444;
