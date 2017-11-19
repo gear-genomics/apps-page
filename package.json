@@ -1,0 +1,27 @@
+{
+  "name": "gear-apps-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gear-genomics/gear-apps-page.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Markus Hsi-Yang Fritz",
+    "email": "markus.h.y.fritz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gear-genomics/gear-apps-page/issues"
+  },
+  "homepage": "https://github.com/gear-genomics/gear-apps-page#readme",
+  "devDependencies": {
+    "nuxt": "^1.0.0-rc11"
+  }
+}

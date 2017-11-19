@@ -1,2 +1,4 @@
 /dist/
-/venv/
+/.nuxt/
+/node_modules/
+/npm-debug.log
