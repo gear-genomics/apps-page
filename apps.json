@@ -36,6 +36,11 @@
     "description": "Trace analysis viewer."
   },
   {
+    "name": "Sage",
+    "url": "/sage",
+    "description": "Sanger trace alignment."
+  },
+  {
     "name": "alfred",
     "url": "/alfred",
     "description": "BAM file statistics."
