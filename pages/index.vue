@@ -26,6 +26,7 @@
       <div class="teaser">...stay tuned for more...</div>
     </div>
     <footer>
+      <a href="/terms" target="_blank">Terms of Use</a>
       <img src="~/assets/img/EMBL_logo.svg" alt="EMBL logo">
       <div style="float: right; margin-right: 10px;">Hosted with <span class="embl-red">♥</span> by</div>
     </footer>
@@ -108,6 +109,11 @@ footer > img {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+footer > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .embl-red {
