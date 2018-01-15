@@ -27,6 +27,12 @@
     </div>
     <footer>
       <a href="/terms" target="_blank">Terms of Use</a>
+      &middot;
+      <a href="/contact" target="_blank">Contact Us</a>
+      &middot;
+      <a href="https://github.com/gear-genomics" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
       <img src="~/assets/img/EMBL_logo.svg" alt="EMBL logo">
       <div style="float: right; margin-right: 10px;">Hosted with <span class="embl-red">♥</span> by</div>
     </footer>
@@ -74,6 +80,8 @@ export default {
 </script>
 
 <style>
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 .page {
   font-family: 'Muli', sans-serif;
   color: #444;

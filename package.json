@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/gear-genomics/gear-apps-page#readme",
   "devDependencies": {
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.1.1"
   }
 }
