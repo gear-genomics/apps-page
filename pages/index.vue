@@ -48,7 +48,7 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Muli:300,400|Unica+One|Dancing+Script'
+        href: 'https://fonts.googleapis.com/css?family=Muli:300,400|Unica+One|Dancing+Script|Rosarivo'
       }
     ]
   },
@@ -169,11 +169,11 @@ footer > a {
 
 .app-logo {
   display: block;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   text-align: center;
-  line-height: 75px;
+  line-height: 65px;
   text-decoration: none;
   font-family: 'Unica One', sans-serif;
   font-size: 1.5rem;
@@ -188,9 +188,10 @@ footer > a {
 }
 
 .app-description__header {
-  font-size: 1.2rem;
+  font-family: 'Rosarivo', sans-serif;
+  font-size: 1.3rem;
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: .25rem;
 }
 
 .app-description__text {
