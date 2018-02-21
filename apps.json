@@ -44,5 +44,10 @@
     "name": "alfred",
     "url": "/alfred",
     "description": "BAM file statistics."
+  },
+  {
+    "name": "bistro",
+    "url": "/bistro",
+    "description": "Visualize the per-position base distribution across multiple DNA sequences."
   }
 ]

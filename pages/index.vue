@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <header>
-      <img src="~/assets/img/gear.png" alt="GEAR logo" style="width: 350px; margin: 35px 0 15px;">
+      <img src="~/assets/img/gear-logo.v2.png" alt="GEAR logo" style="height: 100px; margin-bottom: 15px;">
       <div style="font-size: 1.6rem; font-family: 'Unica One'">GENOME ANALYSIS SERVER</div>
     </header>
     <div class="container">
@@ -94,7 +94,7 @@ export default {
 }
 
 header {
-  height: 200px;
+  padding: 20px 0;
   background: url(~/assets/img/pattern.png);
   border-bottom: 1px solid #f0f0f0;
   text-align: center;
