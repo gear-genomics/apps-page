@@ -49,5 +49,10 @@
     "name": "bistro",
     "url": "/bistro",
     "description": "Visualize the per-position base distribution across multiple DNA sequences."
+  },
+  {
+    "name": "verdin",
+    "url": "/verdin",
+    "description": "In-silico, variant-aware primer design."
   }
 ]
