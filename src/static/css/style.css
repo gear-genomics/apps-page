@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Unica+One|Dancing+Script|Rosarivo);
+
+.logo-container {
+  display: inline-block;
+  max-width: 450px;
+}
+
+.logo-container img {
+  width: 100%;
+}

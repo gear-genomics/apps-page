@@ -53,6 +53,6 @@
   {
     "name": "verdin",
     "url": "/verdin",
-    "description": "In-silico, variant-aware primer design."
+    "description": "Variant-aware primer design."
   }
 ]

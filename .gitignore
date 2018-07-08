@@ -1,4 +1,4 @@
 /dist/
-/.nuxt/
+/.cache/
 /node_modules/
 /npm-debug.log
