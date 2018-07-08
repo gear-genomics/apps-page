@@ -23,13 +23,13 @@
 </template>
 
 <script>
-import md5 from "md5"
-import { relativeLuminance } from "../utils"
+import md5 from 'md5'
+import { relativeLuminance } from '../utils'
 
 export default {
   data() {
     return {
-      apps: require("../apps.json").sort((app1, app2) =>
+      apps: require('../apps.json').sort((app1, app2) =>
         app1.name.toLowerCase().localeCompare(app2.name.toLowerCase())
       )
     }
@@ -40,16 +40,16 @@ export default {
     },
     stringToColor: function(str) {
       const hashed = md5(str)
-      return "#" + hashed.substr(0, 6)
+      return '#' + hashed.substr(0, 6)
     },
     adjustColor: function(str) {
-      const bgColorHex = this.stringToColor(str);
+      const bgColorHex = this.stringToColor(str)
       const lum = relativeLuminance(
         parseInt(bgColorHex.substr(1, 2), 16),
         parseInt(bgColorHex.substr(3, 2), 16),
         parseInt(bgColorHex.substr(5, 2), 16)
-      );
-      return lum < 0.5 ? "white" : undefined
+      )
+      return lum < 0.5 ? 'white' : undefined
     }
   }
 }
@@ -63,14 +63,14 @@ export default {
   height: 150px;
   margin: 5px;
   border-radius: 5px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   color: inherit;
   text-decoration: none;
   transition: box-shadow 150ms ease-out;
 }
 
 .card:hover {
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .card__left {
@@ -112,7 +112,7 @@ export default {
   font-family: 'Rosarivo', sans-serif;
   font-size: 1.3rem;
   display: block;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .app-description__text {
