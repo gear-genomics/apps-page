@@ -1,23 +1,31 @@
 <template>
-  <div class="text-center">
-    <a v-for="app in apps" :key="app.name" :href="app.url" target="_blank" class="card">
-      <span class="card__left">
-        <span class="app-logo" :style="{
-          backgroundColor: stringToColor(app.name),
-          color: adjustColor(app.name)
-        }">
-          {{ abbreviate(app) }}
-        </span>
-      </span>
-      <span class="card__right">
-        <span class="app-description">
-          <span class="app-description__header">{{ app.name }}</span>
-          <span class="app-description__text">
-            {{ app.description }}
-          </span>
-        </span>
-      </span>
-    </a>
+  <div>
+    <div class="gear-app-grid">
+      <div
+        v-for="app in apps"
+        :key="app.name"
+        class="gear-app-grid-item"
+      >
+        <div class="gear-app-grid-item-header">
+          <a class="gear-app-grid-item-link" :href="app.url" target="_blank">
+            <div class="gear-app-name">{{ app.name }}</div>
+            <div
+              class="gear-app-logo"
+              :style="{
+                backgroundColor: stringToColor(app.name),
+                color: adjustColor(app.name)
+              }">
+              {{ abbreviate(app) }}
+            </div>
+          </a>
+        </div>
+        <div class="gear-app-grid-item-main">
+          <a class="gear-app-grid-item-link" :href="app.url" target="_blank">
+            <div class="gear-app-description">{{ app.description }}</div>
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="teaser">...stay tuned for more...</div>
   </div>
 </template>
@@ -56,75 +64,87 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  display: inline-block;
-  background-color: white;
-  width: 350px;
-  height: 150px;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  color: inherit;
-  text-decoration: none;
-  transition: box-shadow 150ms ease-out;
+.gear-app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
 }
 
-.card:hover {
+.gear-app-grid-item {
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.15s ease-out;
+}
+
+.gear-app-grid-item:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
-.card__left {
-  display: block;
-  width: 35%;
-  height: 100%;
-  float: left;
+.gear-app-grid-item-header {
+  border-radius: 0.5em 0.5em 0 0;
+  height: 150px;
+  background: url(../static/img/gplaypattern.png);
+  border-bottom: 1px solid #f1f1f1;
 }
 
-.card__right {
+.gear-app-grid-item-link {
   display: block;
-  float: left;
-  width: 65%;
+  position: relative;
   height: 100%;
-  padding: 20px 30px 20px 0;
-}
-
-.app-logo {
-  display: block;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 65px;
+  color: inherit;
   text-decoration: none;
-  font-family: 'Unica One', sans-serif;
+}
+
+.gear-app-grid-item-link:hover,
+.gear-app-grid-item-link:active,
+.gear-app-grid-item-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gear-app-grid-item-main {
+  height: 150px;
+}
+
+.gear-app-logo {
+  height: 65px;
+  line-height: 65px;
+  width: 65px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(157, 227, 253);
+  font-family: Unica One, sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gear-app-name {
+  font-family: Rosarivo, sans-serif;
   font-size: 1.5rem;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.app-description {
-  color: #444;
-}
-
-.app-description__header {
-  font-family: 'Rosarivo', sans-serif;
-  font-size: 1.3rem;
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.app-description__text {
-  display: block;
-  text-align: left;
+.gear-app-description {
+  padding: 45px 1.5rem 2rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .teaser {
-  margin-top: 20px;
+  margin-top: 1.5rem;
   font-family: 'Dancing Script', sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 </style>
 
