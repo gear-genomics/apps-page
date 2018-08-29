@@ -54,5 +54,10 @@
     "name": "verdin",
     "url": "/verdin",
     "description": "Variant-aware primer design."
+  },
+  {
+    "name": "halo",
+    "url": "/halo",
+    "description": "Browse haplotype-resolved data, such as Strand-seq."
   }
 ]
