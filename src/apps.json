@@ -1,63 +1,63 @@
 [
   {
     "name": "bgen",
-    "url": "/bgen",
+    "url": "/bgen/",
     "description": "Heuristic barcode generator."
   },
   {
     "name": "Indigo",
-    "url": "/indigo",
+    "url": "/indigo/",
     "description": "Rapid InDel Discovery in Sanger Chromatograms."
   },
   {
     "name": "maze",
-    "url": "/maze",
+    "url": "/maze/",
     "description": "Visually align sequences using exact matches."
   },
   {
     "name": "Primer3Plus",
-    "url": "/primer3plus",
+    "url": "/primer3plus/",
     "description": "Pick primers from a DNA sequence.",
     "abbreviation": "P3P"
   },
   {
     "name": "Wily-DNA-Editor",
-    "url": "/wily-dna-editor",
+    "url": "/wily-dna-editor/",
     "description": "Edit DNA sequences, reverse-complement and do restriction digests."
   },
   {
     "name": "Silica",
-    "url": "/silica",
+    "url": "/silica/",
     "description": "In-silico PCR amplification on complete genomes."
   },
   {
     "name": "Teal",
-    "url": "/teal",
+    "url": "/teal/",
     "description": "Trace analysis viewer."
   },
   {
     "name": "Sage",
-    "url": "/sage",
+    "url": "/sage/",
     "description": "Sanger trace alignment."
   },
   {
     "name": "alfred",
-    "url": "/alfred",
+    "url": "/alfred/",
     "description": "BAM file statistics."
   },
   {
     "name": "bistro",
-    "url": "/bistro",
+    "url": "/bistro/",
     "description": "Visualize the per-position base distribution across multiple DNA sequences."
   },
   {
     "name": "verdin",
-    "url": "/verdin",
+    "url": "/verdin/",
     "description": "Variant-aware primer design."
   },
   {
     "name": "halo",
-    "url": "/halo",
+    "url": "/halo/",
     "description": "Browse haplotype-resolved data, such as Strand-seq."
   }
 ]
