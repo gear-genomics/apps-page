@@ -23,7 +23,7 @@
   "homepage": "https://github.com/gear-genomics/gear-apps-page#readme",
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.1.0",
-    "parcel-bundler": "^1.9.4",
+    "parcel-bundler": "^1.10.3",
     "rimraf": "^2.6.2",
     "vue-template-compiler": "^2.5.16"
   },
