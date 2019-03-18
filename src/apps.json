@@ -59,5 +59,10 @@
     "name": "halo",
     "url": "/halo/",
     "description": "Browse haplotype-resolved data, such as Strand-seq."
+  },
+  {
+    "name": "RDML-Tools",
+    "url": "/rdml-tools/",
+    "description": "Tools to handle RDML files."
   }
 ]
