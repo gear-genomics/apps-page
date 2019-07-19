@@ -22,15 +22,15 @@
   },
   "homepage": "https://github.com/gear-genomics/gear-apps-page#readme",
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.3.0",
-    "parcel-bundler": "^1.10.3",
-    "rimraf": "^2.6.2",
-    "vue-template-compiler": "^2.5.17"
+    "@vue/component-compiler-utils": "^2.6.0",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "blueimp-md5": "^2.10.0",
+    "blueimp-md5": "^2.11.0",
     "md5": "^2.2.1",
-    "vue": "^2.5.16",
-    "vue-hot-reload-api": "^2.3.1"
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
   }
 }
