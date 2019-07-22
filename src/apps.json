@@ -64,5 +64,10 @@
     "name": "RDML-Tools",
     "url": "/rdml-tools/",
     "description": "Tools to handle RDML files."
+  },
+  {
+    "name": "Pearl",
+    "url": "/pearl/",
+    "description": "Assemble trace files with an optional reference sequence."
   }
 ]
