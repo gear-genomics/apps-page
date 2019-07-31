@@ -69,5 +69,10 @@
     "name": "Pearl",
     "url": "/pearl/",
     "description": "Assemble trace files with an optional reference sequence."
+  },
+  {
+    "name": "sabre",
+    "url": "/sabre/",
+    "description": "Browse sequence alignments."
   }
 ]
