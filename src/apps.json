@@ -73,6 +73,6 @@
   {
     "name": "sabre",
     "url": "/sabre/",
-    "description": "Browse sequence alignments."
+    "description": "Sequence alignment browser."
   }
 ]
