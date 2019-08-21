@@ -35,9 +35,17 @@
         <span>Terms of Service</span>
       </v-tooltip>
     </v-app-bar>
-    <v-content>
+    <v-content class="pb-12">
       <AppsList :apps="apps" />
     </v-content>
+    <v-footer
+      class="d-flex justify-end align-center pa-4"
+      absolute
+      elevation="2"
+    >
+      <span>Supported by</span>
+      <img class="footer-logo ml-1" src="@/assets/embl.svg" alt="EMBL logo" />
+    </v-footer>
   </v-app>
 </template>
 
@@ -56,11 +64,16 @@ export default {
 </script>
 
 <style scoped>
-.v-app-bar {
+.v-app-bar,
+.v-footer {
   background: url("~@/assets/pattern.png");
 }
 
 .v-app-bar .v-btn {
   height: 100% !important;
+}
+
+.footer-logo {
+  height: 2rem;
 }
 </style>
