@@ -44,7 +44,9 @@
       elevation="2"
     >
       <span>Supported by</span>
-      <img class="footer-logo ml-1" src="@/assets/embl.svg" alt="EMBL logo" />
+      <a href="https://embl.de">
+        <img class="footer-logo ml-1" src="@/assets/embl.svg" alt="EMBL logo" />
+      </a>
     </v-footer>
   </v-app>
 </template>
@@ -75,5 +77,6 @@ export default {
 
 .footer-logo {
   height: 2rem;
+  vertical-align: middle;
 }
 </style>
