@@ -12,26 +12,27 @@
     </h1>
 
     <section class="card-grid my-6">
-      <v-card
+      <v-hover
+        v-slot:default="{ hover }"
         v-for="app in appsSorted"
         :key="app.name"
-        class="text-center"
-        :href="app.url"
       >
-        <div class="card-header d-flex justify-center align-center">
-          <div
-            class="app-logo"
-            :style="{
-              backgroundColor: stringToColor(app.name),
-              color: adjustColor(app.name)
-            }"
-          >
-            {{ abbreviate(app) }}
+        <v-card class="text-center" :elevation="hover ? 10 : 2" :href="app.url">
+          <div class="card-header d-flex justify-center align-center">
+            <div
+              class="app-logo"
+              :style="{
+                backgroundColor: stringToColor(app.name),
+                color: adjustColor(app.name)
+              }"
+            >
+              {{ abbreviate(app) }}
+            </div>
           </div>
-        </div>
-        <v-card-title class="d-inline-block">{{ app.name }}</v-card-title>
-        <v-card-text>{{ app.description }}</v-card-text>
-      </v-card>
+          <v-card-title class="d-inline-block">{{ app.name }}</v-card-title>
+          <v-card-text>{{ app.description }}</v-card-text>
+        </v-card>
+      </v-hover>
     </section>
 
     <div class="teaser text-center mb-3">...stay tuned for more...</div>
