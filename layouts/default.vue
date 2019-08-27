@@ -1,11 +1,13 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <img src="@/assets/gear-g.png" height="75%" class="mx-4" />
-      <v-toolbar-title class="headline text-uppercase d-none d-sm-flex">
-        <span>GEAR</span>
-        <span class="font-weight-light">-GENOMICS</span>
-      </v-toolbar-title>
+      <nuxt-link class="header-logo" to="/">
+        <img src="@/assets/gear-g.png" height="75%" class="mx-4" />
+        <v-toolbar-title class="headline text-uppercase d-none d-sm-flex">
+          <span>GEAR</span>
+          <span class="font-weight-light">-GENOMICS</span>
+        </v-toolbar-title>
+      </nuxt-link>
       <v-spacer></v-spacer>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
@@ -18,8 +20,8 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" href="https://gear-genomics.com/contact/">
-            <v-icon left>far fa-envelope</v-icon>
+          <v-btn text v-on="on" to="/contact">
+            <v-icon left>far fa-paper-plane</v-icon>
             <span class="d-none d-md-flex">Contact</span>
           </v-btn>
         </template>
@@ -27,16 +29,16 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" href="https://gear-genomics.com/terms/">
+          <v-btn text v-on="on" to="/terms">
             <v-icon left>fas fa-balance-scale</v-icon>
-            <span class="d-none d-md-flex">TOS</span>
+            <span class="d-none d-md-flex">ToU</span>
           </v-btn>
         </template>
-        <span>Terms of Service</span>
+        <span>Terms of Use</span>
       </v-tooltip>
     </v-app-bar>
     <v-content class="pb-12">
-      <AppsList :apps="apps" />
+      <nuxt />
     </v-content>
     <v-footer
       class="d-flex justify-end align-center pa-4"
@@ -51,32 +53,26 @@
   </v-app>
 </template>
 
-<script>
-import AppsList from "./components/AppsList";
-
-export default {
-  name: "App",
-  components: {
-    AppsList
-  },
-  data: () => ({
-    apps: require("./apps.json")
-  })
-};
-</script>
-
 <style scoped>
-.v-app-bar,
-.v-footer {
-  background: url("~@/assets/pattern.png");
-}
-
 .v-app-bar .v-btn {
   height: 100% !important;
+}
+
+.v-app-bar,
+.v-footer {
+  background: url('~@/assets/pattern.png');
 }
 
 .footer-logo {
   height: 2rem;
   vertical-align: middle;
+}
+
+.header-logo {
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
 }
 </style>

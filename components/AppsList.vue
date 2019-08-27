@@ -40,8 +40,8 @@
 </template>
 
 <script>
-import md5 from "md5";
-import { relativeLuminance } from "../utils";
+import md5 from 'md5'
+import { relativeLuminance } from '@/utils'
 
 export default {
   props: {
@@ -52,30 +52,30 @@ export default {
   data: () => ({}),
   methods: {
     abbreviate(app) {
-      return app.abbreviation || app.name.substr(0, 2).toUpperCase();
+      return app.abbreviation || app.name.substr(0, 2).toUpperCase()
     },
     stringToColor(str) {
-      const hashed = md5(str);
-      return "#" + hashed.substr(0, 6);
+      const hashed = md5(str)
+      return '#' + hashed.substr(0, 6)
     },
     adjustColor(str) {
-      const bgColorHex = this.stringToColor(str);
+      const bgColorHex = this.stringToColor(str)
       const lum = relativeLuminance(
         parseInt(bgColorHex.substr(1, 2), 16),
         parseInt(bgColorHex.substr(3, 2), 16),
         parseInt(bgColorHex.substr(5, 2), 16)
-      );
-      return lum < 0.5 ? "white" : undefined;
+      )
+      return lum < 0.5 ? 'white' : undefined
     }
   },
   computed: {
     appsSorted() {
       return [...this.apps].sort((app1, app2) =>
         app1.name.localeCompare(app2.name)
-      );
+      )
     }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -89,7 +89,7 @@ h1.headline {
 }
 
 .v-card__title {
-  font-family: "Rosarivo", serif;
+  font-family: 'Rosarivo', serif;
 }
 
 .app-logo {
@@ -111,7 +111,7 @@ h1.headline {
 }
 
 .teaser {
-  font-family: "Dancing Script", sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   font-size: 2rem;
 }
 </style>
