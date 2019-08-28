@@ -77,7 +77,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/markdownit'],
+  modules: [['@nuxtjs/markdownit', { linkify: true }]],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
