@@ -1,22 +1,11 @@
 <template>
   <v-container>
-    <v-img
-      :src="require('@/assets/gear-logo.v2.png')"
-      class="my-3"
-      contain
-      max-height="100"
-    ></v-img>
+    <v-img :src="require('@/assets/gear-logo.v2.png')" class="my-3" contain max-height="100"></v-img>
 
-    <h1 class="headline text-center mb-4">
-      genome analysis server
-    </h1>
+    <h1 class="headline text-center mb-4">genome analysis server</h1>
 
     <section class="card-grid my-6">
-      <v-hover
-        v-slot:default="{ hover }"
-        v-for="app in appsSorted"
-        :key="app.name"
-      >
+      <v-hover v-slot:default="{ hover }" v-for="app in appsSorted" :key="app.name">
         <v-card class="text-center" :elevation="hover ? 10 : 2" :href="app.url">
           <div class="card-header d-flex justify-center align-center">
             <div
@@ -25,9 +14,7 @@
                 backgroundColor: stringToColor(app.name),
                 color: adjustColor(app.name)
               }"
-            >
-              {{ abbreviate(app) }}
-            </div>
+            >{{ abbreviate(app) }}</div>
           </div>
           <v-card-title class="d-inline-block">{{ app.name }}</v-card-title>
           <v-card-text>{{ app.description }}</v-card-text>

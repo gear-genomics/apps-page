@@ -1,5 +1,5 @@
 <template>
-  <AppsList :apps="apps" />
+  <AppsList :apps="apps"/>
 </template>
 
 <script>

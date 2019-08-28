@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app>
       <nuxt-link class="header-logo" to="/">
-        <img src="@/assets/gear-g.png" height="75%" class="mx-4" />
+        <img src="@/assets/gear-g.png" height="75%" class="mx-4">
         <v-toolbar-title class="headline text-uppercase d-none d-sm-flex">
           <span>GEAR</span>
           <span class="font-weight-light">-GENOMICS</span>
@@ -38,16 +38,12 @@
       </v-tooltip>
     </v-app-bar>
     <v-content class="pb-12">
-      <nuxt />
+      <nuxt/>
     </v-content>
-    <v-footer
-      class="d-flex justify-end align-center pa-4"
-      absolute
-      elevation="2"
-    >
+    <v-footer class="d-flex justify-end align-center pa-4" absolute elevation="2">
       <span>Supported by</span>
       <a href="https://embl.de">
-        <img class="footer-logo ml-1" src="@/assets/embl.svg" alt="EMBL logo" />
+        <img class="footer-logo ml-1" src="@/assets/embl.svg" alt="EMBL logo">
       </a>
     </v-footer>
   </v-app>

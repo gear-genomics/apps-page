@@ -8,16 +8,13 @@
       </v-list-item-content>
     </v-list-item>
 
-    <v-img
-      :src="require('@/assets/animal-close-up-daylight-1884017.jpg')"
-      height="194"
-    ></v-img>
+    <v-img :src="require('@/assets/animal-close-up-daylight-1884017.jpg')" height="194"></v-img>
 
-    <v-card-text>
-      Genomics Core Facility<br />
-      EMBL Heidelberg<br />
-      Meyerhofstraße 1 69117 Heidelberg<br />
-      Germany
+    <v-card-text class="contact-address">
+      Genomics Core Facility
+      EMBL Heidelberg
+      Meyerhofstraße 1
+      69117 Heidelberg, Germany
     </v-card-text>
 
     <v-card-actions>
@@ -25,9 +22,14 @@
         text
         href="https://www-db.embl.de/EMBLPersonGroup-PersonPicture/MailForm/?recipient=ggenomics"
       >
-        <v-icon left>far fa-envelope</v-icon>
-        Email us
+        <v-icon left>far fa-envelope</v-icon>Email us
       </v-btn>
     </v-card-actions>
   </v-card>
 </template>
+
+<style scoped>
+.contact-address {
+  white-space: pre-line;
+}
+</style>

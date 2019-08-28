@@ -1,10 +1,5 @@
 <template>
-  <v-sheet
-    class="my-12 mx-auto px-12 py-10"
-    max-width="800px"
-    :elevation="2"
-    v-html="terms"
-  />
+  <v-sheet class="my-12 mx-auto px-12 py-10" max-width="800px" :elevation="2" v-html="terms"/>
 </template>
 
 <script>
