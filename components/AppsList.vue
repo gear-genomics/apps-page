@@ -28,7 +28,7 @@
 
 <script>
 import md5 from 'md5'
-import { relativeLuminance } from '@/utils'
+import { randomPastel, relativeLuminance } from '@/utils'
 
 export default {
   props: {
@@ -43,16 +43,17 @@ export default {
     },
     stringToColor(str) {
       const hashed = md5(str)
-      return '#' + hashed.substr(0, 6)
+      return randomPastel(hashed)
     },
     adjustColor(str) {
-      const bgColorHex = this.stringToColor(str)
-      const lum = relativeLuminance(
-        parseInt(bgColorHex.substr(1, 2), 16),
-        parseInt(bgColorHex.substr(3, 2), 16),
-        parseInt(bgColorHex.substr(5, 2), 16)
-      )
-      return lum < 0.5 ? 'white' : undefined
+      // const bgColorHex = this.stringToColor(str)
+      // const lum = relativeLuminance(
+      //   parseInt(bgColorHex.substr(1, 2), 16),
+      //   parseInt(bgColorHex.substr(3, 2), 16),
+      //   parseInt(bgColorHex.substr(5, 2), 16)
+      // )
+      // return lum < 0.5 ? 'white' : undefined
+      return undefined
     }
   },
   computed: {

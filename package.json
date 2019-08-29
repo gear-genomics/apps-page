@@ -13,7 +13,8 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.6",
     "md5": "^2.2.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "seedrandom": "^3.0.3"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
