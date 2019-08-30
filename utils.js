@@ -1,3 +1,4 @@
+import { hsv } from 'd3-hsv'
 import seedrandom from 'seedrandom'
 
 function toSrgb(c) {
@@ -12,16 +13,21 @@ export function relativeLuminance(r, g, b) {
   return 0.2126 * sR + 0.7152 * sG + 0.0722 * sB
 }
 
+function randomFloat(min, max, rng = Math.random) {
+  return rng() * (max - min) + min
+}
+
+// exclusive `max`
 function randomInteger(min, max, rng = Math.random) {
-  return Math.floor(rng() * (max + 1 - min)) + min
+  return Math.floor(rng() * (max - min)) + min
 }
 
 export function randomPastel(seed = '') {
   const rng = seedrandom(seed)
 
-  const h = randomInteger(1, 360, rng)
-  const s = randomInteger(20, 40, rng)
-  const l = randomInteger(70, 90, rng)
+  const h = randomInteger(0, 360, rng)
+  const s = randomFloat(0.1, 0.5, rng)
+  const v = randomFloat(0.93, 1, rng)
 
-  return `hsl(${h}, ${s}%, ${l}%)`
+  return hsv(h, s, v).formatHex()
 }

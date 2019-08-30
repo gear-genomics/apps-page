@@ -45,15 +45,15 @@ export default {
       const hashed = md5(str)
       return randomPastel(hashed)
     },
+    // TODO revisit this
     adjustColor(str) {
-      // const bgColorHex = this.stringToColor(str)
-      // const lum = relativeLuminance(
-      //   parseInt(bgColorHex.substr(1, 2), 16),
-      //   parseInt(bgColorHex.substr(3, 2), 16),
-      //   parseInt(bgColorHex.substr(5, 2), 16)
-      // )
-      // return lum < 0.5 ? 'white' : undefined
-      return undefined
+      const bgColorHex = this.stringToColor(str)
+      const lum = relativeLuminance(
+        parseInt(bgColorHex.substr(1, 2), 16),
+        parseInt(bgColorHex.substr(3, 2), 16),
+        parseInt(bgColorHex.substr(5, 2), 16)
+      )
+      return lum < 0.5 ? 'white' : undefined
     }
   },
   computed: {
