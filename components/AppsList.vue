@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-img :src="require('@/assets/gear-logo.v2.png')" class="my-3" contain max-height="100"></v-img>
-
+app-logo
     <h1 class="headline text-center mb-4">genome analysis server</h1>
 
     <section class="card-grid my-6">
@@ -10,7 +10,7 @@
           <v-card-title class="app-name">{{ app.name }}</v-card-title>
           <div class="card-header d-flex justify-center align-center">
             <div
-              class="app-logo"
+              class="app-logo elevation-1"
               :style="{
                 backgroundColor: stringToColor(app.name),
                 color: adjustColor(app.name)
@@ -89,10 +89,7 @@ h1.headline {
   line-height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #9de3fd;
   font-family: Unica One, sans-serif;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-grid {
