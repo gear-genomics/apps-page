@@ -11,15 +11,6 @@
       <v-spacer></v-spacer>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" href="https://github.com/gear-genomics">
-            <v-icon left>fab fa-github</v-icon>
-            <span class="d-none d-md-flex">GitHub</span>
-          </v-btn>
-        </template>
-        <span>GitHub</span>
-      </v-tooltip>
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
           <v-btn text v-on="on" to="/contact">
             <v-icon left>far fa-paper-plane</v-icon>
             <span class="d-none d-md-flex">Contact</span>
@@ -31,10 +22,19 @@
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on" to="/terms">
             <v-icon left>fas fa-balance-scale</v-icon>
-            <span class="d-none d-md-flex">ToU</span>
+            <span class="d-none d-md-flex">Terms</span>
           </v-btn>
         </template>
         <span>Terms of Use</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on }">
+          <v-btn text v-on="on" href="https://github.com/gear-genomics">
+            <v-icon left>fab fa-github</v-icon>
+            <span class="d-none d-md-flex">GitHub</span>
+          </v-btn>
+        </template>
+        <span>GitHub</span>
       </v-tooltip>
     </v-app-bar>
     <v-content class="pb-12">
