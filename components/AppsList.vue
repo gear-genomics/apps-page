@@ -7,6 +7,7 @@
     <section class="card-grid my-6">
       <v-hover v-slot:default="{ hover }" v-for="app in appsSorted" :key="app.name">
         <v-card class="text-center" :elevation="hover ? 10 : 2" :href="app.url">
+          <v-card-title class="app-name">{{ app.name }}</v-card-title>
           <div class="card-header d-flex justify-center align-center">
             <div
               class="app-logo"
@@ -16,7 +17,6 @@
               }"
             >{{ abbreviate(app) }}</div>
           </div>
-          <v-card-title class="d-inline-block">{{ app.name }}</v-card-title>
           <v-card-text>{{ app.description }}</v-card-text>
         </v-card>
       </v-hover>
@@ -72,12 +72,15 @@ h1.headline {
 }
 
 .card-header {
-  height: 100px;
-  background: url(~@/assets/gplaypattern.png);
+  height: 125px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: url(~@/assets/hero-patterns-circuit-board.svg);
 }
 
-.v-card__title {
+.app-name {
   font-family: 'Rosarivo', serif;
+  flex-direction: column;
 }
 
 .app-logo {

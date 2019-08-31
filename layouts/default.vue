@@ -56,7 +56,9 @@
 
 .v-app-bar,
 .v-footer {
-  background: url('~@/assets/pattern.png');
+  background-color: rgba(255, 255, 255, 0.95);
+  background-image: url('~@/assets/hero-patterns-topography.svg');
+  background-repeat: repeat;
 }
 
 .footer-logo {

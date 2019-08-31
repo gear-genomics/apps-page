@@ -1,7 +1,6 @@
 <template>
   <v-card max-width="344" class="mx-auto mt-8">
     <v-list-item>
-      <!-- <v-list-item-avatar color="grey"></v-list-item-avatar> -->
       <v-icon left>far fa-paper-plane</v-icon>
       <v-list-item-content>
         <v-list-item-title class="headline">Contact</v-list-item-title>
