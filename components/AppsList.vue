@@ -1,7 +1,6 @@
 <template>
   <v-container>
     <v-img :src="require('@/assets/gear-logo.v2.png')" class="my-3" contain max-height="100"></v-img>
-app-logo
     <h1 class="headline text-center mb-4">genome analysis server</h1>
 
     <section class="card-grid my-6">
