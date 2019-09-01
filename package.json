@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "npm run generate",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
@@ -14,13 +14,14 @@
     "@nuxtjs/markdownit": "^1.2.6",
     "d3-hsv": "^0.1.0",
     "md5": "^2.2.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.9.2",
     "seedrandom": "^3.0.3"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.6.1",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "js-yaml-loader": "^1.2.2",
     "prettier": "^1.16.4"
   }
 }

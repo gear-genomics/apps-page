@@ -4,13 +4,13 @@
 
 <script>
 import AppsList from '@/components/AppsList'
+import apps from '@/apps.yaml'
+
 export default {
   name: 'App',
   components: {
     AppsList
   },
-  data: () => ({
-    apps: require('@/apps.json')
-  })
+  data: () => ({ apps })
 }
 </script>
