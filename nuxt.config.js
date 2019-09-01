@@ -95,7 +95,7 @@ export default {
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.ya?ml$/,
-        loader: 'js-yaml-loader'
+        use: 'js-yaml-loader'
       })
     }
   }
