@@ -23,8 +23,8 @@ export default {
           'GEAR is a suite of bioinformatics / genomics web applications. Give it a spin! 🚀'
       },
       { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: 'https://gear-genomics.com' },
-      { name: 'og:image', content: 'https://gear-genomics.com/gear.png' },
+      { name: 'og:url', content: 'https://www.gear-genomics.com' },
+      { name: 'og:image', content: 'https://www.gear-genomics.com/gear.png' },
       // Twitter Card
       { name: 'twitter:card', content: 'summary' },
       {
@@ -36,7 +36,10 @@ export default {
         content:
           'GEAR is a suite of bioinformatics / genomics web applications. Give it a spin! 🚀'
       },
-      { name: 'twitter:image', content: 'https://gear-genomics.com/gear.png' },
+      {
+        name: 'twitter:image',
+        content: 'https://www.gear-genomics.com/gear.png'
+      },
       { name: 'twitter:image:alt', content: 'GEAR Logo' }
     ],
     link: [
