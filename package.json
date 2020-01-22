@@ -11,17 +11,17 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.6",
+    "@nuxtjs/markdownit": "^1.2.7",
     "d3-hsv": "^0.1.0",
     "md5": "^2.2.1",
-    "nuxt": "^2.9.2",
-    "seedrandom": "^3.0.3"
+    "nuxt": "^2.11.0",
+    "seedrandom": "^3.0.5"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.6.1",
+    "@nuxtjs/vuetify": "^1.10.2",
     "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "js-yaml-loader": "^1.2.2",
-    "prettier": "^1.16.4"
+    "prettier": "^1.19.1"
   }
 }
