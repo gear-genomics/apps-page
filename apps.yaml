@@ -41,3 +41,6 @@
 - name: sabre
   url: '/sabre/'
   description: Sequence alignment browser.
+- name: ancient
+  url: '/ancient/'
+  description: Ancestry inference with convolutional neural networks.
