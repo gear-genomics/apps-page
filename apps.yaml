@@ -44,3 +44,6 @@
 - name: ancient
   url: '/ancient/'
   description: Ancestry inference with convolutional neural networks.
+- name: Salt
+  url: '/salt/'
+  description: Affine gap local and banded global alignment for two DNA sequences.
