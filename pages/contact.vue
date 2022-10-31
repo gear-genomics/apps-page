@@ -19,7 +19,7 @@
     <v-card-actions>
       <v-btn
         text
-        href="https://www-db.embl.de/EMBLPersonGroup-PersonPicture/MailForm/?recipient=ggenomics"
+        href="https://www.embl.org/groups/genomics/contact-gear-genomics/"
       >
         <v-icon left>far fa-envelope</v-icon>Email us
       </v-btn>
