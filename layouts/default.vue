@@ -20,6 +20,15 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
+          <v-btn text v-on="on" to="/citation">
+            <v-icon left>fas fa-user-graduate</v-icon>
+            <span class="d-none d-md-flex">Citation</span>
+          </v-btn>
+        </template>
+        <span>Citation</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on }">
           <v-btn text v-on="on" to="/terms">
             <v-icon left>fas fa-balance-scale</v-icon>
             <span class="d-none d-md-flex">Terms</span>
