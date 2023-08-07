@@ -43,12 +43,7 @@ export default {
       { name: 'twitter:image:alt', content: 'GEAR Logo' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Rosarivo|Unica+One|Dancing+Script&display=swap'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -68,13 +63,7 @@ export default {
    */
   buildModules: [
     [
-      '@nuxtjs/vuetify',
-      {
-        defaultAssets: {
-          font: true,
-          icons: 'fa'
-        }
-      }
+      '@nuxtjs/vuetify'
     ]
   ],
   /*

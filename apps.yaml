@@ -41,9 +41,9 @@
 - name: sabre
   url: '/sabre/'
   description: Sequence alignment browser.
-- name: ancient
-  url: '/ancient/'
-  description: Ancestry inference with convolutional neural networks.
+- name: Padlock
+  url: '/padlock/'
+  description: Design padlock probes for in-situ sequencing.
 - name: Salt
   url: '/salt/'
   description: Affine gap local and banded global alignment for two DNA sequences.

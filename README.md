@@ -5,6 +5,9 @@
 ## Build Setup
 
 ```bash
+# clone
+$ git clone --recursive https://github.com/gear-genomics/apps-page.git
+
 # install dependencies
 $ npm install
 
@@ -17,4 +20,7 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# replace libs
+$ ./fix-libs.sh
 ```
