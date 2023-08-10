@@ -43,7 +43,12 @@ export default {
       { name: 'twitter:image:alt', content: 'GEAR Logo' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://www.gear-genomics.com/libs/landing.css'
+      }
     ]
   },
   /*
@@ -63,7 +68,13 @@ export default {
    */
   buildModules: [
     [
-      '@nuxtjs/vuetify'
+      '@nuxtjs/vuetify',
+      {
+        defaultAssets: {
+          font: false,
+          icons: 'fa'
+        }
+      }
     ]
   ],
   /*
