@@ -41,9 +41,9 @@
 - name: sabre
   url: '/sabre/'
   description: Sequence alignment browser.
-- name: Padlock
+- name: padlock
   url: '/padlock/'
-  description: Design padlock probes for in-situ sequencing.
+  description: Padlock probe design for in-situ sequencing.
 - name: Salt
   url: '/salt/'
   description: Affine gap local and banded global alignment for two DNA sequences.
