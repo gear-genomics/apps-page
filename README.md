@@ -20,7 +20,4 @@ $ npm run start
 
 # generate static project
 $ npm run generate
-
-# replace libs
-$ ./fix-libs.sh
 ```
