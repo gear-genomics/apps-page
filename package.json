@@ -11,10 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.7",
+    "@nuxtjs/markdownit": "^1.2.10",
     "d3-hsv": "^0.1.0",
     "md5": "^2.2.1",
-    "nuxt": "^2.17.1",
+    "nuxt": "^3.12.1",
     "seedrandom": "^3.0.5"
   },
   "devDependencies": {
