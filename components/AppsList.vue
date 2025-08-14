@@ -74,7 +74,7 @@ h1.headline {
   height: 125px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  background: url(/hero-patterns-circuit-board.svg);
+  background: url('/hero-patterns-circuit-board.svg');
 }
 
 .app-name {

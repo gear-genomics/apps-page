@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app>
       <nuxt-link class="header-logo" to="/">
-        <img src="@/assets/gear-g.png" height="75%" class="mx-4">
+        <img src="/gear-g.png" height="75%" class="mx-4">
         <v-toolbar-title class="headline text-uppercase d-none d-sm-flex">
           <span>GEAR</span>
           <span class="font-weight-light">-GENOMICS</span>
@@ -52,7 +52,7 @@
     <v-footer class="d-flex justify-end align-center pa-4" absolute elevation="2">
       <span>Supported by</span>
       <a href="https://embl.de">
-        <img class="footer-logo ml-1" src="@/assets/embl.svg" alt="EMBL logo">
+        <img class="footer-logo ml-1" src="/embl.svg" alt="EMBL logo">
       </a>
     </v-footer>
   </v-app>
@@ -66,7 +66,7 @@
 .v-app-bar,
 .v-footer {
   background-color: rgba(255, 255, 255, 0.95);
-  background-image: url('~@/assets/hero-patterns-topography.svg');
+  background-image: url('/hero-patterns-topography.svg');
   background-repeat: repeat;
 }
 
