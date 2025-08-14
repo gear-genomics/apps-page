@@ -47,7 +47,7 @@
       </v-tooltip>
     </v-app-bar>
     <v-content class="pb-12">
-      <nuxt/>
+      <NuxtPage />
     </v-content>
     <v-footer class="d-flex justify-end align-center pa-4" absolute elevation="2">
       <span>Supported by</span>
