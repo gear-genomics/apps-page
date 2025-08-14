@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <nuxt-link class="header-logo" to="/">
+      <NuxtLink class="header-logo" to="/">
         <img src="/gear-g.png" height="75%" class="mx-4">
         <v-toolbar-title class="headline text-uppercase d-none d-sm-flex">
           <span>GEAR</span>
           <span class="font-weight-light">-GENOMICS</span>
         </v-toolbar-title>
-      </nuxt-link>
+      </NuxtLink>
       <v-spacer></v-spacer>
       <v-tooltip bottom>
         <template v-slot:activator="{ props }">
