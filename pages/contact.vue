@@ -7,7 +7,7 @@
       </v-list-item-content>
     </v-list-item>
 
-    <v-img :src="require('@/assets/pexels-1884017.jpg')" height="194"></v-img>
+    <v-img src="/pexels-1884017.jpg" height="194"></v-img>
 
     <v-card-text class="contact-address">
       Genomics Core Facility
