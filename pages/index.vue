@@ -3,8 +3,17 @@
 </template>
 
 <script>
-import AppsList from '@/components/AppsList'
+import AppsList from '@/components/AppsList.vue'
 import appsData from '@/apps.json'
 
-const apps = appsData.apps
+export default {
+  components: {
+    AppsList
+  },
+  data() {
+    return {
+      apps: appsData.apps
+    }
+  }
+}
 </script>

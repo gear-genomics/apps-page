@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import citation from '@/citation/citation.md'
+import citationMd from '@/citation/citation.md?raw'
 import MarkdownIt from 'markdown-it'
-const md = new MarkdownIt()
 
 export default {
   computed: {
-    citation() {
-      return citation
+    citationHtml() {
+      const md = new MarkdownIt()      
+      return md.render(citationMd)
     }
   }
 }
