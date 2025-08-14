@@ -9,7 +9,10 @@ import MarkdownIt from 'markdown-it'
 export default {
   computed: {
     terms() {
-      const md = new MarkdownIt()
+      const md = new MarkdownIt({
+        linkify: true,
+        html: true
+      })
       return md.render(termsMd)
      }
   }

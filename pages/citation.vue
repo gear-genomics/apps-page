@@ -9,7 +9,10 @@ import MarkdownIt from 'markdown-it'
 export default {
   computed: {
     citation() {
-      const md = new MarkdownIt()      
+      const md = new MarkdownIt({
+        linkify: true,
+        html: true
+      })
       return md.render(citationMd)
     }
   }
