@@ -48,6 +48,16 @@ export default defineNuxtConfig ({
   css: [
     'vuetify/styles'
   ],
+  router: {
+    options: {
+      scrollBehaviour(to, from, savedPosition) {
+        if (savedPosition) {
+          return savedPosition;
+        }
+        return { left: 0, top: 0 };
+      }
+    }
+  },
   build: {
     transpile: ['vuetify'],
     extend(config, ctx) {
