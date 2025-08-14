@@ -10,8 +10,8 @@
       </nuxt-link>
       <v-spacer></v-spacer>
       <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" to="/contact">
+        <template v-slot:activator="{ props }">
+          <v-btn text v-bind="props" to="/contact">
             <v-icon left>far fa-paper-plane</v-icon>
             <span class="d-none d-md-flex">Contact</span>
           </v-btn>
@@ -19,8 +19,8 @@
         <span>Contact Us</span>
       </v-tooltip>
       <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" to="/citation">
+        <template v-slot:activator="{ props }">
+          <v-btn text v-bind="props" to="/citation">
             <v-icon left>fas fa-user-graduate</v-icon>
             <span class="d-none d-md-flex">Citation</span>
           </v-btn>
@@ -28,8 +28,8 @@
         <span>Citation</span>
       </v-tooltip>
       <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" to="/terms">
+        <template v-slot:activator="{ props }">
+          <v-btn text v-bind="props" to="/terms">
             <v-icon left>fas fa-balance-scale</v-icon>
             <span class="d-none d-md-flex">Terms</span>
           </v-btn>
@@ -37,8 +37,8 @@
         <span>Terms of Use</span>
       </v-tooltip>
       <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" href="https://github.com/gear-genomics">
+        <template v-slot:activator="{ props }">
+          <v-btn text v-bind="props" href="https://github.com/gear-genomics">
             <v-icon left>fab fa-github</v-icon>
             <span class="d-none d-md-flex">GitHub</span>
           </v-btn>
@@ -46,9 +46,9 @@
         <span>GitHub</span>
       </v-tooltip>
     </v-app-bar>
-    <v-content class="pb-12">
+    <v-main class="pb-12">
       <NuxtPage />
-    </v-content>
+    </v-main>
     <v-footer class="d-flex justify-end align-center pa-4" absolute elevation="2">
       <span>Supported by</span>
       <a href="https://embl.de">

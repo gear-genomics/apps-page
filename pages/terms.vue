@@ -3,15 +3,15 @@
 </template>
 
 <script>
-import terms from '@/terms-of-use/terms.md'
+import termsMd from '@/terms-of-use/terms.md?raw'
 import MarkdownIt from 'markdown-it'
-const md = new MarkdownIt()
 
 export default {
   computed: {
     terms() {
-      return terms
-    }
+      const md = new MarkdownIt()
+      return md.render(termsMd)
+     }
   }
 }
 </script>

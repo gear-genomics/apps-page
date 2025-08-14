@@ -8,7 +8,7 @@ import MarkdownIt from 'markdown-it'
 
 export default {
   computed: {
-    citationHtml() {
+    citation() {
       const md = new MarkdownIt()      
       return md.render(citationMd)
     }
