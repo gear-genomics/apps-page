@@ -1,49 +1,50 @@
-- name: bgen
-  url: '/bgen/'
-  description: Heuristic barcode generator.
-- name: Indigo
-  url: '/indigo/'
-  description: Rapid InDel Discovery in Sanger Chromatograms.
-- name: maze
-  url: '/maze/'
-  description: Visually align sequences using exact matches.
-- name: Primer3Plus
-  url: '/primer3plus/'
-  description: Pick primers from a DNA sequence.
-  abbreviation: P3P
-- name: Wily-DNA-Editor
-  url: '/wily-dna-editor/'
-  description: Edit DNA sequences, reverse-complement and do restriction digests.
-- name: Silica
-  url: '/silica/'
-  description: In-silico PCR amplification on complete genomes.
-- name: Teal
-  url: '/teal/'
-  description: Trace analysis viewer.
-- name: Sage
-  url: '/sage/'
-  description: Sanger trace alignment.
-- name: alfred
-  url: '/alfred/'
-  description: BAM file statistics.
-- name: bistro
-  url: '/bistro/'
-  description: Visualize the per-position base distribution across multiple DNA sequences.
-- name: halo
-  url: '/halo/'
-  description: Browse haplotype-resolved data, such as Strand-seq.
-- name: RDML-Tools
-  url: '/rdml-tools/'
-  description: Tools to handle RDML files.
-- name: Pearl
-  url: '/pearl/'
-  description: Assemble trace files with an optional reference sequence.
-- name: sabre
-  url: '/sabre/'
-  description: Sequence alignment browser.
-- name: padlock
-  url: '/padlock/'
-  description: Padlock probe design for in-situ sequencing.
-- name: Salt
-  url: '/salt/'
-  description: Affine gap local and banded global alignment for two DNA sequences.
+apps:
+  - name: bgen
+    url: '/bgen/'
+    description: Heuristic barcode generator.
+  - name: Indigo
+    url: '/indigo/'
+    description: Rapid InDel Discovery in Sanger Chromatograms.
+  - name: maze
+    url: '/maze/'
+    description: Visually align sequences using exact matches.
+  - name: Primer3Plus
+    url: '/primer3plus/'
+    description: Pick primers from a DNA sequence.
+    abbreviation: P3P
+  - name: Wily-DNA-Editor
+    url: '/wily-dna-editor/'
+    description: Edit DNA sequences, reverse-complement and do restriction digests.
+  - name: Silica
+    url: '/silica/'
+    description: In-silico PCR amplification on complete genomes.
+  - name: Teal
+    url: '/teal/'
+    description: Trace analysis viewer.
+  - name: Sage
+    url: '/sage/'
+    description: Sanger trace alignment.
+  - name: alfred
+    url: '/alfred/'
+    description: BAM file statistics.
+  - name: bistro
+    url: '/bistro/'
+    description: Visualize the per-position base distribution across multiple DNA sequences.
+  - name: halo
+    url: '/halo/'
+    description: Browse haplotype-resolved data, such as Strand-seq.
+  - name: RDML-Tools
+    url: '/rdml-tools/'
+    description: Tools to handle RDML files.
+  - name: Pearl
+    url: '/pearl/'
+    description: Assemble trace files with an optional reference sequence.
+  - name: sabre
+    url: '/sabre/'
+    description: Sequence alignment browser.
+  - name: padlock
+    url: '/padlock/'
+    description: Padlock probe design for in-situ sequencing.
+  - name: Salt
+    url: '/salt/'
+    description: Affine gap local and banded global alignment for two DNA sequences.

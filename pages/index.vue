@@ -4,13 +4,8 @@
 
 <script>
 import AppsList from '@/components/AppsList'
-import apps from '@/apps.yaml'
+import appsData from '@/apps.yaml'
 
-export default {
-  name: 'App',
-  components: {
-    AppsList
-  },
-  data: () => ({ apps })
-}
+const apps = appsData.apps
+console.log(appsData)
 </script>
