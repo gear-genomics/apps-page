@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-img :src="require('@/assets/gear-logo.v2.png')" class="my-3" contain max-height="100"></v-img>
+    <v-img src="/gear-logo.v2.png" class="my-3" contain max-height="100"></v-img>
     <h1 class="headline text-center mb-4">genome analysis server</h1>
 
     <section class="card-grid my-6">
@@ -74,7 +74,7 @@ h1.headline {
   height: 125px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  background: url(~@/assets/hero-patterns-circuit-board.svg);
+  background: url(/hero-patterns-circuit-board.svg);
 }
 
 .app-name {
