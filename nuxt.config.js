@@ -43,23 +43,19 @@ export default defineNuxtConfig ({
             'https://www.gear-genomics.com/libs/landing.css'
         }
       ]
-    },
-    css: [
-      '~/assets/variables.scss'
-    ],
-    modules: [
-      '@vuetify/nuxt'
-    ],
-    vuetify: {
-	theme: { defaultTheme: 'light' }
-    },
-    build: {
-      extend(config, ctx) {
-        config.module.rules.push({
-          test: /\.ya?ml$/,
-          use: 'js-yaml-loader'
-        })
-      }
+    }
+  },
+  css: [
+    'vuetify/styles',
+    '~/assets/variables.scss'
+  ],
+  build: {
+    transpile: ['vuetify'],
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.ya?ml$/,
+        use: 'js-yaml-loader'
+      })
     }
   }
 })
