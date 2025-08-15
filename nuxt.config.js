@@ -69,7 +69,7 @@ export default defineNuxtConfig ({
   },
   nitro: {
     prerender: {
-      crawLinks: false
+      crawlLinks: false
     }
   }
 })
