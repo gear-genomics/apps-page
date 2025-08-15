@@ -19,4 +19,4 @@ jobs:
     - name: Run npm install
       run: |
         npm install
-	npm run generate
+        npm run generate
