@@ -66,6 +66,10 @@ export default defineNuxtConfig ({
         use: 'js-yaml-loader'
       })
     }
+  },
+  nitro: {
+    prerender: {
+      crawLinks: false
+    }
   }
 })
-
