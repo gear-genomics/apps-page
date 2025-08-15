@@ -6,7 +6,7 @@
 
 ```bash
 # clone
-$ git clone --recursive https://github.com/gear-genomics/apps-page.git
+$ git clone https://github.com/gear-genomics/apps-page.git
 
 # install dependencies
 $ npm install
