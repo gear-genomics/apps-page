@@ -18,6 +18,6 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
-# generate static project
+# for static hosting use the .output/public directory
 $ npm run generate
 ```
