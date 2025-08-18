@@ -8,10 +8,10 @@
     <v-img src="/pexels-1884017.jpg" height="194"></v-img>
 
     <v-card-text class="contact-address">
-      Genomics Core Facility
-      EMBL Heidelberg
-      Meyerhofstraße 1
-      69117 Heidelberg, Germany
+      Genomics Core Facility<br />
+      EMBL Heidelberg<br />
+      Meyerhofstraße 1<br />
+      69117 Heidelberg, Germany<br />
     </v-card-text>
 
     <v-card-actions>
