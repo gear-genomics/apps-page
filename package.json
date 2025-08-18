@@ -11,10 +11,12 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
+    "chroma-js": "^3.1.2",
     "md5": "^2.2.1",
     "nuxt": "^3.16.0",
     "sass": "^1.90.0",
     "sass-loader": "^16.0.5",
+    "seedrandom": "^3.0.5",
     "vuetify": "^3.9.5"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { hsv } from 'd3-hsv'
+import chroma from 'chroma-js'
 import seedrandom from 'seedrandom'
 
 function toSrgb(c) {
@@ -29,5 +29,5 @@ export function randomPastel(seed = '') {
   const s = randomFloat(0.1, 0.5, rng)
   const v = randomFloat(0.93, 1, rng)
 
-  return hsv(h, s, v).formatHex()
+  return chroma.hsv(h, s, v).hex()
 }
