@@ -2,7 +2,7 @@
   "name": "apps-page",
   "version": "3.0.0",
   "description": "Main page of GEAR, the genome analysis server.",
-  "author": "Markus Hsi-Yang Fritz",
+  "author": "Markus Hsi-Yang Fritz, Tobias Rausch",
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
@@ -13,7 +13,6 @@
   "dependencies": {
     "d3-hsv": "^0.1.0",
     "deepmerge": "^4.3.1",
-    "markdown-it": "^14.1.0",
     "md5": "^2.2.1",
     "nuxt": "^3.16.0",
     "sass": "^1.90.0",
@@ -24,7 +23,6 @@
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "js-yaml-loader": "^1.2.2",
     "prettier": "^1.19.1"
   }
 }
