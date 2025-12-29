@@ -10,7 +10,7 @@
         available on the GEAR Genomics platform. Each entry links to the corresponding
         license in the application’s GitHub repository.
       </p>
-
+      <br />
       <p>
       Alfred: <a href='https://github.com/tobiasrausch/alfred/blob/main/LICENSE' target="_blank">BSD 3-Clause License</a>
       </p>

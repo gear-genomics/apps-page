@@ -96,8 +96,8 @@
       </p>
       <h2>GEAR License</h2>
       <p>
-        The GEAR software is free and open-source. License details can be found in the source code repositories on GitHub
-        (<a href="https://github.com/gear-genomics" target="_blank" rel="noopener">https://github.com/gear-genomics</a>).
+        The GEAR software is free and open-source. License details for each web application can be
+	found <a href="/licenses/" target="_blank" rel="noopener">here</a>.
       </p>
     </v-card-text>
   </v-card>
