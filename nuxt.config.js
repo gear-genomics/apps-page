@@ -74,7 +74,8 @@ export default defineNuxtConfig ({
         '/',
         '/citation',
         '/contact',
-        '/terms'
+        '/terms',
+        '/licenses'
       ]
     }
   }
