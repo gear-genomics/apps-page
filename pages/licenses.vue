@@ -57,7 +57,7 @@
       Teal: <a href='https://github.com/gear-genomics/teal/blob/main/LICENSE' target="_blank">GNU General Public License v3.0</a>
       </p>
       <p>
-      Wally: <a href='https://github.com/gear-genomics/wallyapp/blob/main/LICENSE' target="_blank">GNU General Public License v3.0</a>
+      Wally: <a href='https://github.com/tobiasrausch/wally/blob/main/LICENSE' target="_blank">BSD 3-Clause License</a>
       </p>
       <p>
       Wily DNA Editor: <a href='https://github.com/gear-genomics/wily-dna-editor/blob/main/LICENSE' target="_blank">GNU General Public License v3.0</a>

@@ -8,9 +8,15 @@
       <p>
         If you use the site in one of your publications please reference the URL
         <a href="https://www.gear-genomics.com" target="_blank" rel="noopener">https://www.gear-genomics.com</a>
-        and please cite the relevant GEAR publication.
+        and please cite the relevant GEAR publications.
       </p>
       <ul>
+        <li>
+	  Andreas Untergasser, Markus Hsi-Yang Fritz, Vladimir Benes, Tobias Rausch
+	  <i>GEAR Genomics: a user-friendly, open-source web platform enabling interactive genomic analysis for molecular biologists</i>,
+	  Nucleic Acids Research, 2026.
+	  <a href="https://doi.org/10.1093/nar/gkag445" target="_blank" rel="noopener">https://doi.org/10.1093/nar/gkag445</a>
+	</li>
         <li>
           Rausch, T., Fritz, M.H., Untergasser, A. and Benes, V.
           <i>Tracy: basecalling, alignment, assembly and deconvolution of sanger chromatogram trace files.</i>
